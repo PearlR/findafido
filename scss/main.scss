@@ -1,0 +1,75 @@
+// Base Styles
+
+$badass: #bada55;
+$header-footer: rgba(2,2,2,0.7);
+$section-height: 500px;
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+}
+
+// Main Section
+
+section { 
+  height: $section-height; 
+}
+  
+  .main {
+    @extend section;
+    background-color: red;
+  }
+
+  .about {
+    @extend section;
+    background-color: orange;
+  }
+
+  .contact {
+    @extend section;
+    background-color: yellow;
+  }
+
+// About Section
+
+
+
+// Contact Section
+
+
+
+// Nav and footer
+
+nav {
+
+background-color: $header-footer;
+color: white;
+height: 3%;
+text-align: right;
+
+  ul {
+    list-style: none;
+    margin-right: 5%;
+  }
+  
+  li {
+    display: inline-block;
+    padding: 1em;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

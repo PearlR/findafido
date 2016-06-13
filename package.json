@@ -1,0 +1,25 @@
+{
+  "name": "findafido",
+  "version": "1.0.0",
+  "description": "awesome",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PearlR/findafido.git"
+  },
+  "author": "pearlr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PearlR/findafido/issues"
+  },
+  "homepage": "https://github.com/PearlR/findafido#readme",
+  "devDependencies": {
+    "node-sass": "^3.7.0",
+    "nodemon": "^1.9.2"
+  }
+}
