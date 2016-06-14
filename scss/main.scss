@@ -1,10 +1,10 @@
-// Base Styles
 
-$badass: #bada55;
-$header-footer: rgba(2,2,2,0.7);
-$section-height: 500px;
+// main.scss
 
-body { 
+@import 'variables';
+@import 'mixins';
+
+  body { 
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -16,17 +16,17 @@ section {
   
   .main {
     @extend section;
-    background-color: red;
+    background-color: none;
   }
 
   .about {
     @extend section;
-    background-color: orange;
+    background-color: none;
   }
 
   .contact {
     @extend section;
-    background-color: yellow;
+    background-color: none;
   }
 
 // About Section
@@ -43,7 +43,6 @@ nav {
 
 background-color: $header-footer;
 color: white;
-height: 3%;
 text-align: right;
 
   ul {
@@ -62,14 +61,16 @@ text-align: right;
   }
 }
 
+footer {
 
+  @extend nav;
+  position: fixed;
+  bottom: 0;
+  width: 100%
 
+  p {
+    margin-right: 5%;
+  }
 
-
-
-
-
-
-
-
+}
 

@@ -2,28 +2,33 @@ body {
   font-family: 'Open Sans', sans-serif; }
 
 section, .main, .about, .contact {
-  height: 500px; }
+  height: 200px; }
 
 .main {
-  background-color: red; }
+  background-color: none; }
 
 .about {
-  background-color: orange; }
+  background-color: none; }
 
 .contact {
-  background-color: yellow; }
+  background-color: none; }
 
-nav {
+nav, footer {
   background-color: rgba(2, 2, 2, 0.7);
   color: white;
-  height: 3%;
   text-align: right; }
-  nav ul {
+  nav ul, footer ul {
     list-style: none;
     margin-right: 5%; }
-  nav li {
+  nav li, footer li {
     display: inline-block;
     padding: 1em; }
-  nav a {
+  nav a, footer a {
     color: white;
     text-decoration: none; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100% p;
+    width-margin-right: 5%; }
