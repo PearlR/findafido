@@ -1,14 +1,24 @@
 body {
   font-family: 'Open Sans', sans-serif; }
 
+h1 {
+  font-family: "Allan", Helvetica, Arial, sans-serif;
+  color: #D4AF37; }
+
 section, .main, .about, .contact {
-  height: 200px; }
+  min-height: 300px;
+  margin: 100px 0; }
 
 .main {
-  background-color: none; }
+  background-image: url("http://mrsmith.agency/wp-content/uploads/2015/04/dog-feature.jpg");
+  margin-bottom: 100px; }
 
 .about {
   background-color: none; }
+  .about h1 {
+    text-align: center; }
+  .about h2 {
+    font-size: 20pt; }
 
 .contact {
   background-color: none; }
@@ -16,10 +26,12 @@ section, .main, .about, .contact {
 nav, footer {
   background-color: rgba(2, 2, 2, 0.7);
   color: white;
-  text-align: right; }
+  text-align: right;
+  font-family: "Allan", Helvetica, Arial, sans-serif; }
   nav ul, footer ul {
     list-style: none;
-    margin-right: 5%; }
+    margin-right: 5%;
+    margin-bottom: 0; }
   nav li, footer li {
     display: inline-block;
     padding: 1em; }
@@ -28,7 +40,6 @@ nav, footer {
     text-decoration: none; }
 
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100% p;
-    width-margin-right: 5%; }
+    width-margin-right: 5%;
+    width-text-align: right; }
