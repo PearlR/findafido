@@ -1,22 +1,27 @@
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 h1 {
-  font-family: "Allan", Helvetica, Arial, sans-serif;
-  color: #D4AF37; }
+  font-family: "Bungee Shade", cursive;
+  color: #D4AF37;
+  text-align: center;
+  margin-bottom: 1.5em; }
+
+h2, label {
+  font-family: "Bungee Hairline", cursive;
+  color: dimgray; }
 
 section, .main, .about, .contact {
   min-height: 300px;
-  margin: 100px 0; }
+  margin: 0 0 100px 0; }
 
 .main {
+  height: 600px;
   background-image: url("http://mrsmith.agency/wp-content/uploads/2015/04/dog-feature.jpg");
-  margin-bottom: 100px; }
+  background-attachment: fixed; }
 
 .about {
   background-color: none; }
-  .about h1 {
-    text-align: center; }
   .about h2 {
     font-size: 20pt; }
 
@@ -27,19 +32,24 @@ nav, footer {
   background-color: rgba(2, 2, 2, 0.7);
   color: white;
   text-align: right;
-  font-family: "Allan", Helvetica, Arial, sans-serif; }
+  font-family: "Bungee Shade", cursive; }
   nav ul, footer ul {
     list-style: none;
     margin-right: 5%;
     margin-bottom: 0; }
   nav li, footer li {
     display: inline-block;
-    padding: 1em; }
+    padding: 1em;
+    margin-top: 1em;
+    display: inline-block; }
+    nav li .left, footer li .left {
+      text-align: left; }
   nav a, footer a {
     color: white;
     text-decoration: none; }
 
 footer {
   width: 100% p;
-    width-margin-right: 5%;
-    width-text-align: right; }
+    width-margin-right: 50px;
+    width-text-align: right;
+    width-margin-bottom: 0; }

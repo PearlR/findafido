@@ -3,38 +3,37 @@
 @import 'variables';
 @import 'mixins';
 
-//  
-
 body { 
-  font-family: 'Open Sans', sans-serif;
+  font-family: $bodyfont;
 }
 
 h1 {
   font-family: $mainfont;
   color: $mainfontcolor;
+  text-align: center;
+  margin-bottom: 1.5em;
 }
 
-// Sections
+h2, label {
+  font-family: $subfont;
+  color: dimgray;
+}
 
 section { 
   min-height: $section-height; 
-  margin: 100px 0;
+  margin: 0 0 100px 0;
 }
   
   .main {
     @extend section;
-    
+    height: 600px;
     background-image: url("http://mrsmith.agency/wp-content/uploads/2015/04/dog-feature.jpg");
-    margin-bottom: 100px;
+    background-attachment: fixed;
   }
 
   .about {
     @extend section;
     background-color: none;
-    
-    h1 {
-      text-align: center;
-    }
     
     h2 {
       font-size: 20pt;
@@ -45,8 +44,6 @@ section {
     @extend section;
     background-color: none;
   }
-
-// Nav and footer
 
 nav {
 
@@ -64,6 +61,12 @@ font-family: $mainfont;
   li {
     display: inline-block;
     padding: 1em;
+    margin-top: 1em;
+    display: inline-block;
+    
+    .left {
+      text-align: left;
+    }
   }
 
   a {
@@ -78,9 +81,9 @@ footer {
   width: 100%
 
   p {
-    margin-right: 5%;
+    margin-right: 50px;
     text-align: right;
+    margin-bottom: 0;
   }
 
 }
-
